@@ -1,0 +1,453 @@
+/* Header Styles */
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Align dropdown icon with the Courses link */
+.nav-item.dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.dropdown-toggle-icon {
+    cursor: pointer;
+    margin-left: 2px; /* Adjust the space between Courses link and icon */
+    color: #000000;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    min-width: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    color: #000000;
+    padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Search Bar Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    height: 40px;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+    border-radius: 5px;
+    outline: none;
+    background-color: #dbdbdb;
+}
+
+.search-btn {
+    background-color: #3C3D37;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 35px;
+    height: 36px;
+}
+
+.search-btn i {
+    font-size: 18px;
+}
+
+.search-btn:hover {
+    background-color: #fd0059;
+}
+
+.close-btn {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 35px;
+    height: 36px;
+}
+
+.close-btn i {
+    font-size: 18px;
+}
+
+.close-btn:hover {
+    background-color: #cc0000;
+}
+
+.search-input.active {
+    width: 200px;
+    opacity: 1;
+    visibility: visible;
+    transition: width 0.5s ease, opacity 0.5s ease;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+
+    .search-container {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: width 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+    }
+
+    .search-input.active {
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        transition: width 0.5s ease, opacity 0.5s ease;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+}
+
+
+
+/* Contact Form Styles */
+
+h1 {
+    font-weight: 700;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    margin: 0 auto; /* Center the form on larger screens */
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #dfdede;
+    color: #272727;
+    border: 1px solid #4b4e75;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Full width for inputs */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #292929;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #d6d6d6;
+}
+
+.contact-form .btn-send {
+    background-color: #3C3D37;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.contact-form .btn-send:hover {
+    background-color: #f9a02c;
+    transform: scale(1.1); /* Zoom on hover */
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    min-width: 200px;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.toast .btn-close {
+    filter: invert(1);
+}
+
+/* Responsive Adjustments */
+
+/* Tablets and Medium Screens */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px; /* Reduce padding for medium screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller heading on tablets */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px; /* Reduce padding for inputs */
+    }
+
+    .contact-form .btn-send {
+        width: auto; /* Allow the button to adapt to the container */
+        padding: 8px 16px; /* Adjust padding for the button */
+    }
+}
+
+/* Mobile and Small Screens */
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 15px; /* Further reduce padding for small screens */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller heading for mobile */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 6px; /* Reduce padding even more for smaller screens */
+    }
+
+    .contact-form .btn-send {
+        width: auto; /* Button will take the size of the text */
+        padding: 8px 16px; /* Adjust padding for better fit on mobile */
+    }
+}
+
+/* Fixed/sticky icon bar */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 100; /* Make sure it's always on top */
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.github {
+    background: #3c3c3c;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .icon-bar {
+        top: 80%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .icon-bar a {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-bar {
+        top: 90%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .icon-bar a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .icon-bar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: unset;
+        bottom: 0;
+        transform: none;
+    }
+
+    .icon-bar a {
+        flex: 1;
+        padding: 14px;
+        border-right: 1px solid white;
+    }
+
+    .icon-bar a:last-child {
+        border-right: none;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1E201E;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+.brand {
+    color: red;
+    font-weight: bold;
+}
+
+.to-top {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.circlee {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.circlee:hover {
+    background-color: #fd0059;
+}
+
+.circlee i {
+    font-size: 20px;
+    color: #000;
+}
+
+.circlee i:hover {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .circlee {
+        width: 40px;
+        height: 40px;
+    }
+
+    .circle i {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}

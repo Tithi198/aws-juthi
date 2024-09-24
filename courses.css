@@ -1,0 +1,1057 @@
+/* Header Styles */
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Align dropdown icon with the Courses link */
+.nav-item.dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.dropdown-toggle-icon {
+    cursor: pointer;
+    margin-left: 2px;/* Adjust the space between Courses link and icon */
+    color: #000000;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    min-width: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu.show {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.dropdown-item {
+    color: #000000;
+    padding: 10px 20px;
+    
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Search Bar Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    height: 40px;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+    border-radius: 5px;
+    outline: none;
+    background-color: #dbdbdb;
+}
+
+.search-btn {
+    background-color: #3C3D37;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 35px;
+    height: 36px;
+}
+
+.search-btn i {
+    font-size: 18px;
+}
+
+.search-btn:hover {
+    background-color: #fd0059;
+}
+
+.close-btn {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 35px;
+    height: 36px;
+}
+
+.close-btn i {
+    font-size: 18px;
+}
+
+.close-btn:hover {
+    background-color: #cc0000;
+}
+
+.search-input.active {
+    width: 200px;
+    opacity: 1;
+    visibility: visible;
+    transition: width 0.5s ease, opacity 0.5s ease;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+
+    .search-container {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: width 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+    }
+
+    .search-input.active {
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        transition: width 0.5s ease, opacity 0.5s ease;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+}
+
+/* Course Section */
+
+.course-section {
+    margin: 50px 0; /* Vertical spacing */
+}
+
+.course-section .row {
+    display: flex;
+    align-items: center; /* Vertically align content */
+    flex-wrap: nowrap; /* Prevent wrapping to keep image and text side by side */
+    justify-content: space-between; /* Space between image and text */
+    gap: 20px; /* Add space between image and text */
+}
+
+.course-section .col-md-6 {
+    flex: 0 0 50%; /* Set both columns to take up 50% of the available space */
+}
+
+.course-section img {
+    border-radius: 10px; /* Rounded corners for image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.course-section h2 {
+    font-size: 28px; /* Larger font size for heading */
+    font-weight: 700; /* Bold font */
+    color: #333333; /* Dark text color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.course-section p.lead {
+    font-size: 18px; /* Slightly larger font size for lead text */
+    font-weight: 400; /* Normal weight */
+    color: #555555; /* Medium grey color */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 15px; /* Space below lead text */
+}
+
+.course-section p {
+    font-size: 16px; /* Regular font size */
+    color: #666666; /* Darker grey for paragraph text */
+    line-height: 1.5; /* Line height for better readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+.course-section .btn {
+    background-color: #007bff; /* Primary button color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Larger font size for button */
+    font-weight: 600; /* Semi-bold font */
+    text-transform: capitalize;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    color: #fff;
+}
+
+.course-section .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #fff;
+}
+
+.course-section .btn-lg {
+    padding: 12px 30px; /* Larger padding for large button */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-section {
+        text-align: center; /* Center-align text on smaller screens */
+    }
+
+    .course-section .row {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .course-section img {
+        margin-bottom: 20px; /* Space below image */
+    }
+
+    .course-section h2 {
+        font-size: 24px; /* Smaller heading font size */
+    }
+
+    .course-section p {
+        font-size: 15px; /* Smaller paragraph font size */
+    }
+
+    .course-section .btn-lg {
+        font-size: 16px; /* Smaller button font size */
+        padding: 10px 20px; /* Adjust button padding */
+    }
+}
+
+/* Course Section */
+
+.course-section {
+    margin: 50px 0; /* Vertical spacing */
+}
+
+.course-section .row {
+    display: flex;
+    align-items: center; /* Vertically align content */
+    flex-wrap: nowrap; /* Prevent wrapping to keep image and text side by side */
+    justify-content: space-between; /* Space between image and text */
+    gap: 20px; /* Add space between image and text */
+}
+
+.course-section .col-md-6 {
+    flex: 0 0 50%; /* Set both columns to take up 50% of the available space */
+}
+
+.course-section img {
+    border-radius: 10px; /* Rounded corners for image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.course-section h2 {
+    font-size: 28px; /* Larger font size for heading */
+    font-weight: 700; /* Bold font */
+    color: #333333; /* Dark text color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.course-section p.lead {
+    font-size: 18px; /* Slightly larger font size for lead text */
+    font-weight: 400; /* Normal weight */
+    color: #555555; /* Medium grey color */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 15px; /* Space below lead text */
+}
+
+.course-section p {
+    font-size: 16px; /* Regular font size */
+    color: #666666; /* Darker grey for paragraph text */
+    line-height: 1.5; /* Line height for better readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+.course-section .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Larger font size for button */
+    font-weight: 600; /* Semi-bold font */
+    text-transform: uppercase; /* Uppercase text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.course-section .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.course-section .btn-lg {
+    padding: 12px 30px; /* Larger padding for large button */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-section {
+        text-align: center; /* Center-align text on smaller screens */
+    }
+
+    .course-section .row {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .course-section img {
+        margin-bottom: 20px; /* Space below image */
+    }
+
+    .course-section h2 {
+        font-size: 24px; /* Smaller heading font size */
+    }
+
+    .course-section p {
+        font-size: 15px; /* Smaller paragraph font size */
+    }
+
+    .course-section .btn-lg {
+        font-size: 16px; /* Smaller button font size */
+        padding: 10px 20px; /* Adjust button padding */
+    }
+}
+
+/* Coding Section */
+
+.coding-section {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 60px 15px; /* Reduced horizontal padding for small screens */
+}
+
+.coding-section h2 {
+    font-size: 32px; /* Larger font size for heading */
+    font-weight: 700; /* Bold font */
+    color: #333333; /* Dark text color */
+    margin-bottom: 20px; /* Space below heading */
+    text-align: center; /* Center text on smaller screens */
+}
+
+.coding-section p.lead {
+    font-size: 18px; /* Slightly larger font size for lead text */
+    color: #555555; /* Medium grey color */
+    margin-bottom: 30px; /* Space below paragraph */
+    line-height: 1.6; /* Line height for better readability */
+    text-align: center; /* Center text on smaller screens */
+}
+
+.coding-section .form-control-lg {
+    padding: 10px 15px; /* Larger padding inside input */
+    font-size: 16px; /* Font size for input text */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border */
+    box-shadow: none; /* Remove default shadow */
+    width: 100%; /* Full width for inputs */
+}
+
+.coding-section .form-control-lg:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Light blue shadow */
+}
+
+.coding-section .form-select-lg {
+    padding: 10px 15px; /* Larger padding inside select */
+    font-size: 16px; /* Font size for select text */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border */
+    box-shadow: none; /* Remove default shadow */
+    width: 100%; /* Full width for selects */
+}
+
+.coding-section .form-select-lg:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Light blue shadow */
+}
+
+.coding-section .row.g-3 > .col-md-8 {
+    margin-bottom: 15px; /* Space between input and select on mobile */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .coding-section {
+        padding: 40px 10px; /* Adjust padding for tablet devices */
+    }
+
+    .coding-section h2 {
+        font-size: 28px; /* Slightly smaller font size */
+        margin-bottom: 15px; /* Adjust margin for better spacing */
+    }
+
+    .coding-section p.lead {
+        font-size: 16px; /* Smaller font size for readability */
+        margin-bottom: 20px; /* Adjust margin for better spacing */
+    }
+
+    .coding-section .row.g-3 > .col-md-8 {
+        margin-bottom: 10px; /* Reduce spacing for inputs on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .coding-section {
+        padding: 30px 5px; /* Adjust padding for mobile devices */
+    }
+
+    .coding-section h2 {
+        font-size: 24px; /* Smaller font size */
+        margin-bottom: 10px; /* Reduce margin for better spacing */
+    }
+
+    .coding-section p.lead {
+        font-size: 14px; /* Smaller font size */
+        margin-bottom: 15px; /* Reduce margin for better spacing */
+    }
+
+    .coding-section .form-control-lg,
+    .coding-section .form-select-lg {
+        padding: 8px 10px; /* Smaller padding for inputs */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .coding-section .row.g-3 > .col-md-8 {
+        margin-bottom: 8px; /* Reduce spacing for inputs */
+    }
+}
+
+
+/* Project Cards Section */
+
+
+.container {
+    max-width: 1200px; /* Limit the container width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+/* Section Heading Styling */
+.section-heading {
+    font-size: 2rem; /* Larger font size for section heading */
+    font-weight: bold; /* Bold font weight */
+    color: #2c3e50; /* Darker color for heading */
+    text-align: center; /* Center align the heading */
+    margin-bottom: 40px; /* Space below the heading */
+}
+
+/* Course Card Styling */
+.course-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #e1e1e1; /* Default border */
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; /* Smooth hover effect */
+    overflow: hidden;
+    height: 100%; /* Ensure all cards are of equal height */
+    text-align: center; /* Center align text */
+    background-color: #fff; /* White background for the cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for card */
+    padding: 20px; /* Inner padding for consistent spacing */
+}
+
+/* Hover Effects */
+.course-card:hover {
+    transform: translateY(-5px); /* Lift up effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-color: orange; /* Highlight border on hover */
+}
+
+/* Card Image Styling */
+.card-img-top {
+    width: 100%;
+    height: 150px; /* Fixed height for all images */
+    object-fit: cover; /* Ensure image fits without distortion */
+    border-bottom: 1px solid #ddd;
+    background-color: #e9ecef; /* Light background for placeholder images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Placeholder Text Styling */
+.card-img-top img {
+    width: 100%; /* Make sure the images take full width */
+    height: 100%;
+    object-fit: cover; /* Keep the aspect ratio */
+}
+
+.card-img-top h2, .card-img-top h3, .card-img-top i {
+    color: #6c757d; /* Light gray color for placeholder text */
+    margin: 0;
+}
+
+/* Card Body Styling */
+.card-body {
+    flex: 1; /* Ensure the card body fills available space */
+    text-align: left; /* Align text to the left */
+    padding: 15px 0; /* Adjust padding for better spacing */
+}
+
+/* Card Title and Text Styling */
+.card-title {
+    font-size: 1.1rem; /* Slightly smaller font size */
+    font-weight: bold; /* Uniform weight for all headings */
+    margin-bottom: 10px;
+    color: #2c3e50; /* Consistent color for headings */
+    text-align: center; /* Center align headings */
+}
+
+.card-text {
+    font-size: 0.9rem; /* Uniform font size for paragraphs */
+    color: #555; /* Consistent text color */
+    line-height: 1.5; /* Consistent line height for readability */
+    margin-bottom: 15px;
+}
+
+/* Price and Duration Styling */
+.price {
+    font-size: 1.1rem; /* Slightly smaller price font size */
+    font-weight: bold;
+    color: #e67e22; /* Orange color for price */
+    margin-bottom: 10px; /* Add some spacing below price */
+}
+
+.original-price {
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    color: #e74c3c;
+    margin-left: 5px;
+}
+
+.duration {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 0.8rem;
+}
+
+/* Flag Styling */
+.flag {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* New Badge Styling */
+.new-badge {
+    background-color: #f1c40f; /* Yellow color */
+    color: #fff; /* White text color */
+    padding: 3px 7px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+/* Link Styling */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive Spacing */
+@media (min-width: 768px) {
+    .course-card {
+        margin-bottom: 0; /* Remove extra margin for desktop */
+    }
+}
+
+
+/* Training Section Styles */
+
+.training-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem; /* Larger font size for title */
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #1a202c;
+}
+
+/* Uniform Column Styling */
+.col {
+    display: flex;
+    align-items: stretch; /* Stretch to ensure all cards are of equal height */
+}
+
+/* Training Card Styling */
+/* Training Section Styles */
+.training-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem; /* Larger font size for title */
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #1a202c;
+}
+
+/* Uniform Column Styling */
+.col {
+    display: flex;
+    align-items: stretch; /* Stretch to ensure all cards are of equal height */
+    padding: 10px; /* Add padding to create gap between cards */
+}
+
+/* Training Card Styling */
+/* Training Section Styles */
+.training-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem; /* Larger font size for title */
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #1a202c;
+}
+
+/* Uniform Column Styling */
+.col {
+    display: flex;
+    align-items: stretch; /* Stretch to ensure all cards are of equal height */
+}
+
+/* Training Card Styling */
+.training-card {
+    background: #f8f9fa; /* Light grey background */
+    border: 1px solid #e2e6ea; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    flex: 1; /* Flex property for equal height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    margin: 10px; /* Added margin to create gap on all sides */
+}
+
+/* Hover Effects */
+.training-card:hover {
+    border-color: #6366f1; /* Highlighted border color */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Elevated shadow effect */
+}
+
+/* Badge Styling */
+.badge {
+    display: inline-block;
+    background-color: #e0e0ff; /* Light purple color */
+    color: #6366f1; /* Slightly darker purple */
+    font-size: 0.75rem; /* Smaller font size */
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 4px 8px; /* Adjusted padding */
+    margin-bottom: 12px;
+}
+
+/* Card Title and Text Styling */
+.card-title {
+    font-size: 1.25rem; /* Larger font size for title */
+    font-weight: bold;
+    color: #1a202c;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #4a5568; /* Slightly darker text color */
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Arrow Icon Styling */
+.arrow-icon {
+    font-size: 1.25rem; /* Slightly smaller arrow size */
+    font-weight: bold;
+    color: #1a202c;
+    text-decoration: none; /* Remove underline */
+    margin-top: auto; /* Push arrow to the bottom */
+    align-self: flex-start; /* Align to the left */
+    transition: transform 0.3s, color 0.3s; /* Smooth transition for hover */
+}
+
+.arrow-icon:hover {
+    transform: translateX(5px); /* Move right on hover */
+    color: #6366f1; /* Change color on hover */
+}
+
+/* Explore Link Styling */
+.explore-link {
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #1a202c;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.explore-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Layout Adjustments */
+@media (min-width: 768px) {
+    .training-card {
+        margin-bottom: 0; /* Remove extra margin for desktop */
+    }
+}
+
+@media (max-width: 576px) {
+    .training-card {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+/*feedback section*/
+
+.feedback-section {
+    background: linear-gradient(to right, #8e2de2, #4a00e0, #0072ff, #00c6ff); 
+    padding: 40px 20px; 
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    margin: 40px auto; 
+    text-align: center; 
+}
+
+.feedback-question {
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: #ffffff; 
+    margin-bottom: 10px; 
+}
+
+.feedback-subtext {
+    font-size: 1rem; 
+    color: #e0e0e0; 
+    margin-bottom: 30px; 
+}
+
+.feedback-buttons {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.feedback-btn {
+    font-size: 1rem; 
+    padding: 10px 30px; 
+    border: none; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    background-color: #212121; 
+    color: #ffffff; 
+    display: flex;
+    align-items: center; 
+}
+
+.feedback-btn:hover {
+    background-color: #333333; 
+}
+
+.feedback-response {
+    font-size: 1.2rem; 
+    font-weight: 500; 
+    margin-top: 20px; 
+    display: none; 
+}
+
+
+@media (max-width: 576px) {
+    .feedback-buttons {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+
+    .feedback-btn {
+        width: 100%; 
+    }
+}
+
+
+
+/*newsletter*/
+
+.newsletter-section {
+    padding: 0 15px;
+    background-color: #f9f8fa;
+    
+}
+
+.newsletter-heading {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 28px; /* Matches the size in the image */
+}
+
+.newsletter-description {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+    color: #6c757d;
+    line-height: 1.5;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.newsletter-description::before,
+.newsletter-description::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 40px; /* Adjust the height as needed */
+    background-color: #6c757d;
+}
+
+.newsletter-description::before {
+    left: 0;
+    transform: translateX(-10px); /* Adjust the horizontal spacing as needed */
+}
+
+.newsletter-description::after {
+    right: 0;
+    transform: translateX(10px); /* Adjust the horizontal spacing as needed */
+}
+
+.past-issues-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.past-issues-link:hover {
+    text-decoration: underline;
+}
+
+.newsletter-form .form-control {
+    border-radius: 0;
+    font-size: 16px;
+    height: 50px; /* Height adjustment for alignment */
+}
+
+.newsletter-form .btn-subscribe {
+    border-radius: 0;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px; /* Adjust spacing between inputs and button */
+    height: 50px; /* Height matching the inputs */
+    background-color: #007bff; /* Matching color */
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.btn-subscribe:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Toast Styles */
+.toast {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.toast .btn-close {
+    filter: invert(1);
+}
+@media (max-width: 768px) {
+    .newsletter-heading {
+        font-size: 24px;
+    }
+
+    .newsletter-description {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .newsletter-heading {
+        font-size: 20px;
+    }
+
+    .newsletter-description {
+        font-size: 12px;
+    }
+
+    .newsletter-description::before,
+    .newsletter-description::after {
+        height: 30px; /* Adjust line height for smaller screens */
+    }
+
+    .newsletter-form .btn-subscribe {
+        max-width: 100%;
+    }
+}
+
+
+/*newsletter*/
+
+/* Footer Styles */
+footer {
+    background-color: #1E201E;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+.brand {
+    color: red;
+    font-weight: bold;
+}
+
+.to-top {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.circlee {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.circlee:hover {
+    background-color: #fd0059;
+}
+
+.circlee i {
+    font-size: 20px;
+    color: #000;
+}
+
+.circlee i:hover {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .circlee {
+        width: 40px;
+        height: 40px;
+    }
+
+    .circle i {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}

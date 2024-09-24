@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Header</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CSS -->
+    <!-- Link to external CSS for styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+    <link rel="stylesheet" href="subscribe.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">CloudMastery</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="author.html">Author</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="public-speaking.html">Public Speaking</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="courses.html" id="navbarDropdown">
+                                Courses
+                            </a>
+                            <a class="dropdown-toggle-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="subscribe.html">Subscription</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <button class="close-btn d-none"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!--subscription-->
+
+    <section class="subscription-section text-center">
+        <div class="container">
+            <h2 class="subscription-title">All-Access Subscription</h2>
+            <p class="subscription-text">Become the best coder you can be with unlimited access to all the existing and future courses</p>
+            <div class="rating-section">
+                <span class="rating">
+                    <span class="rating-value">4.7</span>
+                    <span class="star">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Display star ratings -->
+                </span>
+                <span class="reviews">
+                    <span id="live-review-count">3661</span> reviews
+                </span>
+            </div>
+            <div class="pricing-options">
+                <p class="subscription-prompt">Subscribe to access all courses. Cancel anytime!</p>
+                <div class="subscription-buttons">
+                    <a href="#" class="btn btn-gradient annual-plan">Subscribe for $249/Y</a>
+                    <p class="or-text">— or —</p>
+                    <a href="#" class="btn btn-gradient monthly-plan">Subscribe for $29/M</a>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!--part1-->
+   <section class="info-section text-center">
+        <div class="container">
+            <h2 class="info-heading">Clear. Concise. Comprehensive.</h2>
+            <p class="info-text">Tired of piecing together disconnected tutorials or dealing with rambling, confusing instructors? This course is for you! It's perfectly structured into a series of bite-sized, easy-to-follow videos that cover both theory and practice.</p>
+        </div>
+    </section>
+  
+  <!--pasrt2 -->
+<section class="learn-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <!-- Icon above "Highly practical" -->
+                    <div class="icon-section">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <p class="highly-practical">Highly practical</p>
+                    <h2 class="learn-heading">What You'll Learn</h2>
+                    <ul class="learn-list">
+                        <li><i class="check-icon">&#10004;</i> Learn in-demand programming languages and tools</li>
+                        <li><i class="check-icon">&#10004;</i> Develop real-world apps to build your portfolio and impress potential employers</li>
+                        <li><i class="check-icon">&#10004;</i> Gain knowledge in a variety of topics including web development, mobile app development, and data science</li>
+                        <li><i class="check-icon">&#10004;</i> Open up new career opportunities and increase your earning potential</li>
+                        <li><i class="check-icon">&#10004;</i> Stay up-to-date with latest technologies and trends</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--part 3-->
+  
+  <section class="who-this-for-section text-left">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <!-- Icon above "Target student" -->
+                    <div class="icon-section text-left">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <p class="target-student">Target student</p>
+                    <h2 class="who-heading">Who Is This For?</h2>
+                    <ul class="who-list">
+                        <li>— Aspiring developers who want to learn the skills needed to build a successful career in software development</li>
+                        <li>— Professionals who want to expand their knowledge and stay up-to-date with the latest trends and technologies</li>
+                        <li>— Entrepreneurs who want to build their own software products</li>
+                        <li>— Students who want to supplement their formal education with practical, hands-on learning</li>
+                        <li>— Anyone who is curious about coding and wants to explore the world of software development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  <!--part 4-->
+  <section class="coding-journey-section text-center">
+        <div class="container">
+            <h2 class="coding-heading">Accelerate Your Coding Journey</h2>
+            <p class="coding-description">
+                Don't waste your valuable time piecing together disconnected <br> tutorials from different sources.
+                Enroll now and gain the skills and <br>knowledge you need to excel, all in one place.
+            </p>
+        </div>
+    </section>
+  
+    <!--subscription-->
+
+    <!--cards-->
+
+    <section class="pricing__section">
+        <div class="wrapper">
+          <div class="title">
+            <h2>Choose Your Plan</h2>
+            <div class="toggle__section">
+              <span>Monthly</span>
+              <input type="checkbox" name="" id="check">
+              <label for="check" class="toggle__btn">
+                <span></span>
+              </label>
+              <span>Annualy</span>
+            </div>
+          </div>
+          <div class="price__cards">
+            <div class="price__card">
+              <div class="price__details">
+                <h3>Free</h3>
+                <p>Send really big files regularly</p>
+                <ul>
+                  <li>Send up to 2 GB</li>
+                  <li>No need to verify</li>
+                </ul>
+              </div>
+              <hr>
+              <div class="price">0</div>
+              <span>Per person</span>
+              <a href="#" class="btn bg__accent-2">Get started</a>
+            </div>
+            <div class="price__card bg__accent-2">
+              <div class="price__details">
+                <h3>Pro</h3>
+                <p>Send really big files regularly</p>
+                <ul>
+                  <li>Encrypted file storage</li>
+                  <li>Access your files from any device</li>
+                  <li>Get access to all our services</li>
+                </ul>
+              </div>
+              <hr>
+              <div class="price" id="pro">3.69</div>
+              <span>Per person, monthly</span>
+              <a href="#" class="btn bg__accent">Get 200 GB</a>
+            </div>
+            <div class="price__card bg__accent">
+              <div class="price__details">
+                <h3>Premium</h3>
+                <p>Send really big files regularly</p>
+                <ul>
+                  <li>Encrypted file storage</li>
+                  <li>Access your files from any device</li>
+                  <li>Get access to all our services</li>
+                </ul>
+              </div>
+              <hr>
+              <div class="price" id="premium">8.99</div>
+              <span>Per person, monthly</span>
+              <a href="#" class="btn bg__primary">Get 2 TB</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    <!--newsletter-->
+
+    <div class="container newsletter-section">
+        <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-md-6 newsletter-image">
+                <img src="img/4.jpeg" alt="Newsletter Image" class="img-fluid">
+            </div>
+    
+            <!-- Form Section -->
+            <div class="col-md-6">
+                <div class="newsletter-content">
+                    
+                    <h2 class="fw-bold">Subscribe to our Newsletter!</h2>
+                    <p>Be the first to get exclusive offers and the latest news</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email address" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+
+  <footer>
+    <div class="footer-content">
+        <p class="copyright">
+            All Rights Reserved. 2024 <span class="brand">&copy; CloudMastery</span>
+        </p>
+        <div class="to-top" onclick="scrollToTop()">
+            <div class="circlee">
+                <i class="fa-solid fa-angle-up"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--footer-->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="subscribe.js"></script>
+</body>
+</html>

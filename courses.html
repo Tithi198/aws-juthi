@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Header</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CSS -->
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="courses.css">
+    </head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">CloudMastery</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="author.html">Author</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="public-speaking.html">Public Speaking</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="courses.html" id="navbarDropdown">
+                                Courses
+                            </a>
+                            <a class="dropdown-toggle-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="subscribe.html">Subscription</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <button class="close-btn d-none"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<!-- Course Section -->
+<div class="container course-section">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="img/serverless.jpeg" alt="Serverless Icon" class="img-fluid mx-auto d-block">
+        </div>
+        <div class="col-md-6">
+            <h2 class="font-weight-bold">Production-Ready Serverless</h2>
+            <p class="lead font-weight-normal">Join 20+ AWS Heroes & Community Builders and 1000+ other students in leveling up your serverless game.</p>
+            <p>Learn best practices for building production-ready serverless applications in this HANDS-ON workshop. We guarantee to fast-track you to a point where you have the confidence and ability to make the right architectural choices for your serverless application by the end of this workshop.</p>
+            <a href="#" class="btn btn-lg mt-3">Learn More</a>
+        </div>
+    </div>
+</div> 
+
+<!-- Coding Section -->
+<section class="coding-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2 class="display-4 mb-4">Level Up Your Coding Skills</h2>
+                <p class="lead mb-5">
+                    Whether you want to excel in web development, mobile development or strengthen your
+                    fundamental software engineering skills, there is a course for you.
+                </p>
+                <div class="row g-3">
+                    <div class="col-md-8">
+                        <input type="text" class="form-control form-control-lg" placeholder="Search">
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select form-select-lg">
+                            <option selected>All Courses</option>
+                            <option>AWS-fundamentals</option>
+                            <option>Mobile Development</option>
+                            <option>Software Engineering</option>
+                            <option>AWS Cloud Practitioner</option>
+                            <option>Web Development</option>
+                            <option>DevOps</option>
+                            <option>App Development</option>
+                            <option>AWS Solutions Architect </option>
+                            <option>AWS Certified Machine Learning</option>
+                            
+                           
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Project cards section -->
+<div class="container my-5">
+    <h2 class="section-heading text-center mb-5">Courses</h2> <!-- Section heading for Courses -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- All-Access Subscription Card -->
+        <div class="col">
+            <a href="all-access-subscription.html" class="card-link"> <!-- Link to All-Access Subscription page -->
+                <div class="course-card">
+                    <img src="img/subscription.png" class="card-img-top" alt="All Access Subscription"> <!-- Use appropriate image path -->
+                    <div class="card-body">
+                        <h5 class="card-title">All-Access Subscription</h5>
+                        <p class="card-text">Become the best coder you can be with unlimited access to all the existing and future courses</p>
+                        <p class="price">$29/m</p>
+                        <span class="duration">340h</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Python Projects Card -->
+        <div class="col">
+            <a href="python-projects.html" class="card-link"> <!-- Link to Python Projects page -->
+                <div class="course-card">
+                    <img src="img/python.png" class="card-img-top" alt="Python logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Python Projects for Beginners</h5>
+                        <p class="card-text">Sharpen your problem-solving skills with curated, real-world Python projects</p>
+                        <p class="price">$9 <span class="original-price">$149</span></p>
+                        <span class="flag">🇺🇸</span>
+                        <span class="flag">🇪🇸</span>
+                        <span class="duration">5h</span>
+                        <span class="new-badge">New</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Complete Python Mastery Card -->
+        <div class="col">
+            <a href="complete-python-mastery.html" class="card-link"> <!-- Link to Complete Python Mastery page -->
+                <div class="course-card">
+                    <img src="img/python.png" class="card-img-top" alt="Python mastery">
+                    <div class="card-body">
+                        <h5 class="card-title">Complete Python Mastery</h5>
+                        <p class="card-text">Everything you need to program in Python in one course (includes 3 real-world projects)</p>
+                        <p class="price">$5 <span class="original-price">$149</span></p>
+                        <span class="flag">🇺🇸</span>
+                        <span class="flag">🇪🇸</span>
+                        <span class="duration">12h</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- SQL Mastery Card -->
+        <div class="col">
+            <a href="sql-mastery.html" class="card-link"> <!-- Link to SQL Mastery page -->
+                <div class="course-card">
+                    <img src="img/sql.png" class="card-img-top" alt="Sql mastery">
+                    <div class="card-body">
+                        <h5 class="card-title">Complete SQL Mastery</h5>
+                        <p class="card-text">Everything you need to design and query databases in one course</p>
+                        <p class="price">$5 <span class="original-price">$149</span></p>
+                        <span class="duration">11h</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- React Card -->
+        <div class="col">
+            <a href="react-beginners.html" class="card-link"> <!-- Link to React 18 for Beginners page -->
+                <div class="course-card">
+                    <img src="img/react.png" class="card-img-top" alt="React mastery">
+                    <div class="card-body">
+                        <h5 class="card-title">React 18 for Beginners</h5>
+                        <p class="card-text">A step-by-step guide to building web apps with React 18+ and TypeScript</p>
+                        <p class="price">$5 <span class="original-price">$149</span></p>
+                        <span class="flag">🇺🇸</span>
+                        <span class="flag">🇪🇸</span>
+                        <span class="duration">8h</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Next.js Card -->
+        <div class="col">
+            <a href="nextjs-series.html" class="card-link"> <!-- Link to The Ultimate Next.js Series page -->
+                <div class="course-card">
+                    <img src="img/next.png" class="card-img-top" alt="Next mastery">
+                    <div class="card-body">
+                        <h5 class="card-title">The Ultimate Next.js Series</h5>
+                        <p class="card-text">Everything you need to build full-stack applications with Next.js 13+ (App Router) and TypeScript</p>
+                        <p class="price">$9 <span class="original-price">$149</span></p>
+                        <span class="duration">12h</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Training Cards Section -->
+
+<section class="training-section container my-5">
+    <h2 class="section-title">Get started with training by role or domain</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Card 1 -->
+        <div class="col d-flex">
+            <div class="training-card">
+                <span class="badge">Role</span>
+                <h3 class="card-title">Cloud Practitioner</h3>
+                <p class="card-text">Learn cloud fundamentals and best practices</p>
+                <a href="cloud-practitioner.html" class="arrow-icon">→</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col d-flex">
+            <div class="training-card">
+                <span class="badge">Role</span>
+                <h3 class="card-title">Solutions Architect</h3>
+                <p class="card-text">Learn to design highly available systems</p>
+                <a href="solutions-architect.html" class="arrow-icon">→</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col d-flex">
+            <div class="training-card">
+                <span class="badge">Role</span>
+                <h3 class="card-title">Developer</h3>
+                <p class="card-text">Learn to develop applications for the cloud</p>
+                <a href="developer.html" class="arrow-icon">→</a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col d-flex">
+            <div class="training-card">
+                <span class="badge">Domain</span>
+                <h3 class="card-title">Machine Learning and Artificial Intelligence</h3>
+                <p class="card-text">Learn how to apply machine learning, artificial intelligence, and deep learning to innovate faster</p>
+                <a href="machine-learning.html" class="arrow-icon">→</a>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col d-flex">
+            <div class="training-card">
+                <span class="badge">Domain</span>
+                <h3 class="card-title">Security</h3>
+                <p class="card-text">Learn the processes and best practices for securing the AWS platform</p>
+                <a href="security.html" class="arrow-icon">→</a>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col d-flex">
+            <div class="training-card">
+                <span class="badge">Domain</span>
+                <h3 class="card-title">Data analytics</h3>
+                <p class="card-text">Learn to design, build, secure, and maintain analytics solutions</p>
+                <a href="data-analytics.html" class="arrow-icon">→</a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="explore-link">Explore more roles and domains</a>
+</section>
+
+
+
+
+
+
+<!-- Feedback Section -->
+<section class="feedback-section">
+    <div class="container text-center">
+        <p class="feedback-question">Did you find what you were looking for today?</p>
+        <p class="feedback-subtext">Let us know so we can improve the quality of the content on our pages.</p>
+        <div class="feedback-buttons">
+            <button class="feedback-btn" id="yes-btn">
+                <i class="fas fa-thumbs-up"></i> Yes
+            </button>
+            <button class="feedback-btn" id="no-btn">
+                <i class="fas fa-thumbs-down"></i> No
+            </button>
+        </div>
+        <p class="feedback-response" id="feedback-response" style="display: none;">Thank you for your feedback!</p>
+    </div>
+</section>
+
+    
+    <!--newsletter-->
+
+    <section class="newsletter-section"></section>
+        <div class="container text-center">
+            <h1 class="newsletter-heading">Join the Serverless Picks of the Week Newsletter</h1>
+            <p class="newsletter-description">
+                Enter your email address to subscribe to this blog and receive notifications of new posts by email.
+                
+            </p>
+            <form class="newsletter-form">
+                <div class="form-row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6 mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email Address*" required>
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="col-12 col-md-4 col-lg-3 mb-3">
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 mb-3">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-subscribe">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Toast message -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastMessage" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Message Sent</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Thank you for sending your message to us.
+            </div>
+        </div>
+    </div>
+
+
+    
+
+ <!-- Footer -->
+
+ <footer>
+    <div class="footer-content">
+        <p class="copyright">
+            All Rights Reserved. 2024 <span class="brand">&copy; CloudMastery</span>
+        </p>
+        <div class="to-top" onclick="scrollToTop()">
+            <div class="circlee">
+                <i class="fa-solid fa-angle-up"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--footer-->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="courses.js"></script>
+</body>
+</html>

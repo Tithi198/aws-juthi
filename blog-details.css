@@ -1,0 +1,342 @@
+/* Header Styles */
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Align dropdown icon with the Courses link */
+.nav-item.dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.dropdown-toggle-icon {
+    cursor: pointer;
+    margin-left: 2px; /* Adjust the space between Courses link and icon */
+    color: #000000;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    min-width: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    color: #000000;
+    padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Search Bar Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    height: 40px;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+    border-radius: 5px;
+    outline: none;
+    background-color: #dbdbdb;
+}
+
+.search-btn {
+    background-color: #3C3D37;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 35px;
+    height: 36px;
+}
+
+.search-btn i {
+    font-size: 18px;
+}
+
+.search-btn:hover {
+    background-color: #fd0059;
+}
+
+.close-btn {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 35px;
+    height: 36px;
+}
+
+.close-btn i {
+    font-size: 18px;
+}
+
+.close-btn:hover {
+    background-color: #cc0000;
+}
+
+.search-input.active {
+    width: 200px;
+    opacity: 1;
+    visibility: visible;
+    transition: width 0.5s ease, opacity 0.5s ease;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+
+    .search-container {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: width 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+    }
+
+    .search-input.active {
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        transition: width 0.5s ease, opacity 0.5s ease;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+}
+
+/*blog details */
+
+
+
+.blog-detail-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.back-link {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.badge-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+.blog-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.blog-subtitle {
+    font-size: 1rem;
+    color: #666;
+    
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.lead {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .blog-title {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+
+    .lead {
+        font-size: 1rem; /* Adjust lead text size for smaller screens */
+    }
+
+    .img-fluid {
+        width: 100%; /* Make image responsive */
+        height: auto;
+    }
+}
+
+
+/*blog details */
+
+
+/*footer*/
+
+footer {
+    background-color: #1E201E; /* Black background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Center both items horizontally */
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+.brand {
+    color: red;
+    font-weight: bold;
+}
+
+.to-top {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.circlee {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff; /* White circle background */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.circlee:hover {
+    background-color: #fd0059; /* Slight hover effect for better UX */
+}
+
+.circlee i {
+    font-size: 20px;
+    color: #000;
+}
+.circlee i:hover{
+    color: #fff;
+}
+
+/* Medium and Large Screens */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row; /* Place items in a row on larger screens */
+        justify-content: space-between; /* Space the copyright and to-top button */
+    }
+
+    .circlee {
+        width: 40px;
+        height: 40px;
+    }
+
+    .circle i  {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
+
+
+/*footer*/
