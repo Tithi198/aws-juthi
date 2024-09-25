@@ -418,6 +418,7 @@
     border: 1px solid #ddd; /* Light border */
     box-shadow: none; /* Remove default shadow */
     width: 100%; /* Full width for selects */
+    
 }
 
 .coding-section .form-select-lg:focus {
@@ -621,34 +622,14 @@
 
 /* Training Section Styles */
 
+/* Container Styling */
 .training-section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2rem; /* Larger font size for title */
-    font-weight: bold;
-    margin-bottom: 40px;
-    color: #1a202c;
-}
-
-/* Uniform Column Styling */
-.col {
-    display: flex;
-    align-items: stretch; /* Stretch to ensure all cards are of equal height */
-}
-
-/* Training Card Styling */
-/* Training Section Styles */
-.training-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
+/* Section Title Styling */
 .section-title {
     text-align: center;
     font-size: 2rem; /* Larger font size for title */
@@ -662,28 +643,6 @@
     display: flex;
     align-items: stretch; /* Stretch to ensure all cards are of equal height */
     padding: 10px; /* Add padding to create gap between cards */
-}
-
-/* Training Card Styling */
-/* Training Section Styles */
-.training-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2rem; /* Larger font size for title */
-    font-weight: bold;
-    margin-bottom: 40px;
-    color: #1a202c;
-}
-
-/* Uniform Column Styling */
-.col {
-    display: flex;
-    align-items: stretch; /* Stretch to ensure all cards are of equal height */
 }
 
 /* Training Card Styling */
@@ -766,6 +725,31 @@
 .explore-link:hover {
     text-decoration: underline;
 }
+/* Card Title and Text Styling */
+.card-title {
+    font-size: 1.25rem; /* Larger font size for title */
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #4a5568; /* Slightly darker text color */
+    line-height: 1.5;
+    text-align: left;
+    margin-left: 10px;
+}
+/* Image Styling */
+.card-img {
+    width: 100%; /* Ensure image takes the full width of the card */
+    height: 180px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    border-radius: 8px 8px 0 0; /* Rounded top corners matching the card */
+    margin-bottom: 15px; /* Add spacing between image and the content */
+}
 
 /* Responsive Layout Adjustments */
 @media (min-width: 768px) {
@@ -778,12 +762,11 @@
     .training-card {
         padding: 15px; /* Adjust padding for smaller screens */
     }
+    
+    .card-img {
+        height: 150px; /* Adjust image height for smaller screens */
+    }
 }
-
-
-
-
-
 
 
 /*feedback section*/
@@ -839,6 +822,39 @@
     font-weight: 500; 
     margin-top: 20px; 
     display: none; 
+}
+
+/* Toast message styles */
+.toast-message {
+    background-color: #2d2d2e; /* Blue background */
+    color: #ffffff; /* White text color */
+    padding: 15px 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    position: fixed; /* Fixed position */
+    bottom: 30px; /* Distance from the bottom */
+    right: 30px; /* Distance from the right */
+    z-index: 1000; /* High z-index to overlay other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px; /* Minimum width */
+}
+
+.toast-message span {
+    font-size: 16px; /* Text size */
+}
+
+.toast-close {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: #ffffff; /* White color */
+    font-size: 20px; /* Close icon size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.toast-close:hover {
+    color: #ccc; /* Light color on hover */
 }
 
 

@@ -1,0 +1,784 @@
+/* Header Styles */
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Align dropdown icon with the Courses link */
+.nav-item.dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.dropdown-toggle-icon {
+    cursor: pointer;
+    margin-left: 2px;/* Adjust the space between Courses link and icon */
+    color: #000000;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    min-width: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu.show {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.dropdown-item {
+    color: #000000;
+    padding: 10px 20px;
+    
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Search Bar Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    height: 40px;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+    border-radius: 5px;
+    outline: none;
+    background-color: #dbdbdb;
+}
+
+.search-btn {
+    background-color: #3C3D37;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 35px;
+    height: 36px;
+}
+
+.search-btn i {
+    font-size: 18px;
+}
+
+.search-btn:hover {
+    background-color: #fd0059;
+}
+
+.close-btn {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 35px;
+    height: 36px;
+}
+
+.close-btn i {
+    font-size: 18px;
+}
+
+.close-btn:hover {
+    background-color: #cc0000;
+}
+
+.search-input.active {
+    width: 200px;
+    opacity: 1;
+    visibility: visible;
+    transition: width 0.5s ease, opacity 0.5s ease;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+
+    .search-container {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: width 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+    }
+
+    .search-input.active {
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        transition: width 0.5s ease, opacity 0.5s ease;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+}
+
+
+
+/*  hero section */
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* AWS Premier Partner Section */
+.partner-section {
+    background-image: url('img/background.jpg'); /* Replace with the actual background image URL */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 250px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay to make text stand out */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-heading {
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 3.5rem;
+    text-transform: sentencecase;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hero Section */
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Partner Section */
+.partner-section {
+    position: relative;
+    background: url('img/premierbg.jpg') no-repeat center center/cover;
+    height: 300px; /* Adjust height as necessary */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(25, 39, 70, 0.432); /* Dark overlay for better text visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-heading {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem; /* Adjust size for better visibility */
+    text-align: center;
+}
+
+/* Content Section */
+/* Main container styling */
+.container.content-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 1800px;
+}
+
+/* Row styling */
+.row {
+    margin: 0; /* Reset margin for row */
+}
+
+/* Text section styling */
+.text-section {
+    text-align: left; /* Align text to the left */
+}
+
+.sub-heading {
+    font-size: 1.2rem; /* Subheading size */
+    color: #555; /* Subtle color for the subheading */
+    margin-bottom: 10px; /* Space below subheading */
+}
+
+.main-heading {
+    font-size: 2.5rem; /* Main heading size */
+    font-weight: bold; /* Make it bold */
+    color: #333; /* Darker color for main heading */
+    margin-bottom: 20px; /* Space below main heading */
+}
+
+.description {
+    font-size: 1rem; /* Standard text size */
+    color: #666; /* Grey color for description */
+    line-height: 1.6; /* Increased line height for readability */
+    margin-bottom: 20px; /* Space below description */
+}
+
+.footer-text {
+    font-size: 1rem; /* Standard text size */
+    color: #666; /* Grey color for footer text */
+}
+
+/* Link styling */
+.footer-text .text-primary {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make link bold */
+}
+
+.footer-text .text-primary:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Logo styling */
+.aws-logo {
+    max-width: 100%; /* Ensure logo is responsive */
+}
+
+.partner-logo {
+    max-width: 80%; /* Limit logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Space above logo */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-section {
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .main-heading {
+        font-size: 2rem; /* Reduce size on small screens */
+    }
+}
+
+/* AWS Competencies Section Styles */
+.aws-competencies-section {
+    background-color: #f8f9fa; /* Light background for the section */
+    padding: 50px 15px; /* Adjusted padding for mobile */
+    margin-top: 30px;
+    max-width : 1800px
+}
+
+.aws-competencies-section h2 {
+    color: #333; /* Dark color for the heading */
+    font-weight: bold; /* Bold font */
+    margin-bottom: 30px; /* Space below heading */
+}
+
+.aws-competencies-section .card {
+    border: none; /* Remove card border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth transformation */
+    background-color: #ffffff; /* White background for the card */
+}
+
+.aws-competencies-section .card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.aws-competencies-section .card-title {
+    color: #007bff; /* Bootstrap primary color for card title */
+    font-weight: bold; /* Bold font */
+}
+
+.aws-competencies-section .card-text {
+    color: #666; /* Grey color for text */
+    font-size: 0.95rem; /* Smaller font size */
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 767px) {
+    .aws-competencies-section {
+        padding: 30px 10px; /* Reduced padding for smaller screens */
+    }
+
+    .aws-competencies-section h2 {
+        font-size: 1.8rem; /* Adjusted heading size for smaller screens */
+        margin-bottom: 20px; /* Reduced margin */
+    }
+
+    .aws-competencies-section .card {
+        margin-bottom: 20px; /* Increased margin between cards */
+    }
+
+    .aws-competencies-section .card-title {
+        font-size: 1.1rem; /* Adjusted card title size */
+    }
+
+    .aws-competencies-section .card-text {
+        font-size: 0.9rem; /* Reduced font size for card text */
+    }
+}
+
+/* Trek10 Areas of Expertise Section Styles */
+
+.trek10-expertise-section {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 50px 20px; /* Section padding */
+    max-width: 1800px;
+}
+
+.section-title {
+    font-size: 2rem; /* Larger font size for the section title */
+    font-weight: bold; /* Bold text for the title */
+    color: #333; /* Dark color for the title */
+    margin-bottom: 30px; /* Space below the title */
+}
+
+.expertise-card {
+    display: block;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Added background-color transition */
+}
+
+.top-border {
+    height: 5px; /* Height of the top border */
+    background-color: #00bfff; /* Light blue color */
+    position: absolute; /* Position absolute to stick at the top */
+    top: 0; /* Position at the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    border-top-left-radius: 8px; /* Match the card's rounded corners */
+    border-top-right-radius: 8px; /* Match the card's rounded corners */
+}
+
+.expertise-card:hover {
+    background-color: #e9f5ff; /* Light blue background on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.icon-container {
+    margin-top: 20px; /* Space below the top border */
+    margin-bottom: 15px; /* Space below the icon */
+}
+
+.expertise-icon {
+    width: 50px; /* Width of the icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.expertise-title {
+    font-size: 1.1rem; /* Slightly larger font for the title */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Dark color for the title */
+}
+
+.learn-more {
+    position: absolute;
+    bottom: 10px; /* Slightly higher position */
+    left: 50%;
+    transform: translateX(-50%) scale(0); /* Start hidden and scaled down */
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for scaling */
+   
+}
+
+.expertise-card:hover .learn-more {
+    opacity: 1;
+    transform: translateX(-50%) scale(1); /* Scale up on hover */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .expertise-card {
+        padding: 15px 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .expertise-title {
+        font-size: 1rem;
+    }
+
+    .expertise-icon {
+        width: 40px;
+    }
+
+    .learn-more {
+        font-size: 0.8rem;
+    }
+}
+
+/* New to Cloud Section Styles */
+.new-to-cloud-section {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 50px 20px; /* Section padding */
+    border-top: 1px solid #ddd; /* Optional border to separate sections */
+    max-width: 1800px;
+    
+}
+
+.section-title {
+    font-size: 2rem; /* Larger font size for the section title */
+    font-weight: bold; /* Bold text for the title */
+    color: #1f4e79; /* Dark color for the title */
+    margin-bottom: 15px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+
+.section-subtitle {
+    font-size: 1rem; /* Font size for subtitle */
+    color: #555; /* Lighter color for subtitle */
+    margin-bottom: 30px; /* Space below the subtitle */
+    text-align: center; /* Center the subtitle */
+}
+
+.table-responsive {
+    margin-top: 20px; /* Space above the table */
+}
+
+.table {
+    width: 100%; /* Full width for table */
+    border-collapse: collapse; /* Remove default table spacing */
+}
+
+.table thead th {
+    background-color: #007bff; /* Table header background */
+    color: #fff; /* Table header text color */
+    padding: 12px; /* Padding inside table headers */
+    text-align: left; /* Align text to the left */
+}
+
+.table tbody td {
+    padding: 12px; /* Padding inside table cells */
+    border-top: 1px solid #ddd; /* Border between rows */
+    vertical-align: top; /* Align text to the top */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Alternating row background color */
+}
+
+.table tbody tr:hover {
+    background-color: #e9f5ff; /* Background color on row hover */
+}
+
+.table a {
+    color: #007bff; /* Link color inside the table */
+    text-decoration: none; /* Remove underline */
+}
+
+.table a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.5rem; /* Smaller font size on mobile */
+    }
+    .section-subtitle {
+        font-size: 0.9rem; /* Smaller subtitle on mobile */
+    }
+    .table thead {
+        display: none; /* Hide table header on small screens */
+    }
+    .table tbody td {
+        display: block; /* Display cells as block */
+        width: 100%; /* Full width cells */
+        text-align: left; /* Left align text */
+    }
+    .table tbody td:before {
+        content: attr(data-label); /* Add label before each cell */
+        font-weight: bold; /* Bold label */
+        text-transform: uppercase; /* Uppercase label */
+        margin-right: 10px; /* Space after label */
+    }
+}
+
+/*feedback section*/
+
+.feedback-section {
+    background: linear-gradient(to right, #8e2de2, #4a00e0, #0072ff, #00c6ff); 
+    padding: 40px 20px; 
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    margin: 40px auto; 
+    text-align: center; 
+}
+
+.feedback-question {
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: #ffffff; 
+    margin-bottom: 10px; 
+}
+
+.feedback-subtext {
+    font-size: 1rem; 
+    color: #e0e0e0; 
+    margin-bottom: 30px; 
+}
+
+.feedback-buttons {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.feedback-btn {
+    font-size: 1rem; 
+    padding: 10px 30px; 
+    border: none; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    background-color: #212121; 
+    color: #ffffff; 
+    display: flex;
+    align-items: center; 
+}
+
+.feedback-btn:hover {
+    background-color: #333333; 
+}
+
+.feedback-response {
+    font-size: 1.2rem; 
+    font-weight: 500; 
+    margin-top: 20px; 
+    display: none; 
+}
+
+/* Toast message styles */
+.toast-message {
+    background-color: #2d2d2e; /* Blue background */
+    color: #ffffff; /* White text color */
+    padding: 15px 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    position: fixed; /* Fixed position */
+    bottom: 30px; /* Distance from the bottom */
+    right: 30px; /* Distance from the right */
+    z-index: 1000; /* High z-index to overlay other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px; /* Minimum width */
+}
+
+.toast-message span {
+    font-size: 16px; /* Text size */
+}
+
+.toast-close {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: #ffffff; /* White color */
+    font-size: 20px; /* Close icon size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.toast-close:hover {
+    color: #ccc; /* Light color on hover */
+}
+
+
+@media (max-width: 576px) {
+    .feedback-buttons {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+
+    .feedback-btn {
+        width: 100%; 
+    }
+}
+
+
+
+/*footer*/
+
+footer {
+    background-color: #1E201E; 
+    
+    color: #fff; 
+    
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; 
+    
+    align-items: center;
+    flex-direction: column; 
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+.brand {
+    color: red;
+    font-weight: bold;
+}
+
+.to-top {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.circlee {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff; 
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.circlee:hover {
+    background-color: #fd0059; 
+    
+}
+
+.circlee i {
+    font-size: 20px;
+    color: #000;
+}
+.circlee i:hover{
+    color: #fff;
+}
+
+
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        
+        justify-content: space-between; 
+        
+    }
+
+    .circlee {
+        width: 40px;
+        height: 40px;
+    }
+
+    .circle i  {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
+
+
+/*footer*/
+

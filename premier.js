@@ -1,3 +1,12 @@
+// script.js
+
+// Example JavaScript to handle any interactivity if needed
+document.addEventListener('DOMContentLoaded', function() {
+    // This function runs after the page is fully loaded
+    console.log('Page Loaded');
+});
+
+
 //header//
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -33,27 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
-//coding skill//
-
-function navigateToCourse(courseId) {
-    const courseElement = document.getElementById(courseId);
-    if (courseElement) {
-      window.scrollTo({
-        top: courseElement.offsetTop,
-        behavior: 'smooth'
-      });
-    } else {
-      alert("Course not found!");
-    }
-  }
-  
-  document.querySelector(".form-select").addEventListener("change", function() {
-    const selectedCourse = this.value;
-    navigateToCourse(selectedCourse);
-  });
-  
-document.addEventListener('DOMContentLoaded', redirectToCourse);
 
 //feeback//
 
@@ -91,4 +79,7 @@ function scrollToTop() {
         behavior: "smooth"
     });
 }
+
+
+
 
