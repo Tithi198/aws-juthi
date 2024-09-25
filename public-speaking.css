@@ -38,7 +38,7 @@
 
 .dropdown-toggle-icon {
     cursor: pointer;
-    margin-left: 2px; /* Adjust the space between Courses link and icon */
+    margin-left: 2px;/* Adjust the space between Courses link and icon */
     color: #000000;
     font-size: 16px;
     display: flex;
@@ -48,7 +48,7 @@
 /* Dropdown Menu */
 .dropdown-menu {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #ffffff;
     border: 1px solid #ddd;
     margin-top: 10px;
@@ -58,11 +58,15 @@
 
 .dropdown-menu.show {
     display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
 }
 
 .dropdown-item {
     color: #000000;
     padding: 10px 20px;
+    
 }
 
 .dropdown-item:hover {
@@ -178,95 +182,27 @@
     }
 }
 
-/*talk*/
-
-
-section {
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-.row text-center{
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-    margin: 20px auto;
-}
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    text-transform: capitalize;
-    
-    
-}
-
-.subtext {
-    margin-bottom: 0;
-}
-
-button {
-    font-size: 1rem;
-    flex-shrink: 0;
-}
-
-.nav-tabs {
-    margin-bottom: 15px;
-    overflow-x: auto; /* Allows the tabs to be scrollable on small screens */
-}
-
-.table {
-    margin-bottom: 0;
-    white-space: nowrap; /* Prevent table data from wrapping */
-}
-
-.bi-megaphone {
-    margin-right: 8px;
-}
-
-.btn-primary {
-    display: flex;
-    align-items: center;
-}
-
-/* Hover effect for table rows */
-.table tbody tr:hover {
-    background-color: #e0e0e0; /* Light grey background */
-    cursor: pointer; /* Change cursor to pointer */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-/* Custom styles for clickable rows */
-.clickable-row {
-    transition: background-color 0.3s ease;
-}
-
-.clickable-row:hover {
-    background-color: #d3d3d3; /* Slightly darker grey on hover */
-}
-
-
 
 
 /*footer*/
-
 footer {
     background-color: #1E201E; 
+    
     color: #fff; 
+    
     text-align: center;
     padding: 20px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .footer-content {
     display: flex;
     justify-content: center; 
+    
     align-items: center;
     flex-direction: column; 
+    
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -293,6 +229,7 @@ footer p {
     width: 50px;
     height: 50px;
     background-color: #ffffff; 
+    
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -302,6 +239,7 @@ footer p {
 
 .circlee:hover {
     background-color: #fd0059; 
+    
 }
 
 .circlee i {
@@ -313,10 +251,13 @@ footer p {
 }
 
 
+
 @media (min-width: 768px) {
     .footer-content {
-        flex-direction: row; 
+        flex-direction: row;
+        
         justify-content: space-between; 
+        
     }
 
     .circlee {

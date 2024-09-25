@@ -185,175 +185,155 @@
 
 /*hero*/
 
-.about-sections {
-    padding: 60px 0;
-    text-align: center;
-    background-color: #ececec;
+
+
+/* Hero Section Styling */
+.hero-section {
+    width: 100%; /* Full width */
+    height: 350px; /* Height for the hero section */
+    background-image: url('img/bg.jpeg'); /* Replace with your background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* No repeat of the background image */
+    display: flex; /* Center content */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    text-align: center; /* Center text */
+    position: relative; /* For positioning elements inside the container */
 }
 
-.about-juthi{
-    font-size: 36px;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 40px;
-    animation: fadeInText 2s ease-in-out;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    
+.hero-section::before,
+.hero-section::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%; /* Circular shapes */
+    background: rgba(209, 187, 187, 0.966); /* Light red color */
 }
 
-.equal-height {
-    display: flex;
-    align-items: stretch;
+
+
+.hero-heading {
+    font-size: 48px; /* Large font size for heading */
+    color: #ffffff; /* Dark blue color */
+    font-weight: 700; /* Bold font */
 }
 
-.about-image {
-    text-align: center;
-    margin-bottom: 20px;
-    animation: slideInLeft 1.5s ease-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+
+/* Image and Content Section Styling */
+.content-section {
+    padding: 60px 0; /* Spacing around the section */
+    background-color: #ffffff; /* White background color */
 }
 
-.about-image img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border: 5px solid #818181;
-    border-radius: 10px;
+.content-section .container {
+    display: flex; /* Flex display for alignment */
+    justify-content: space-between; /* Space between image and content */
 }
 
-.about-descriptions {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.content-section .row {
+    align-items: center; /* Vertically center the items */
 }
 
-/* Letter Animation for "FARZANA RAHMAN" */
-.name-animation {
-    display: inline-block;
-    color:#f96800;
+.content-section img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below image on mobile */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.name-animation span {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(20px); /* Initial position for animation */
-    animation: letterFadeIn 0.6s forwards;
-    animation-delay: calc(0.1s * var(--i)); /* Delay based on index */
+.content-section .col-lg-6 {
+    padding: 30px; /* Padding around the columns */
 }
 
-/* Keyframe for letter animation */
-@keyframes letterFadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0); /* Moves the letter up to its normal position */
-    }
+.content-section .image-col {
+    padding-right: 50px; /* Extra padding on the right for the image column */
 }
 
-/* Apply a delay to each letter */
-.name-animation span:nth-child(1) { --i: 1; }
-.name-animation span:nth-child(2) { --i: 2; }
-.name-animation span:nth-child(3) { --i: 3; }
-.name-animation span:nth-child(4) { --i: 4; }
-.name-animation span:nth-child(5) { --i: 5; }
-.name-animation span:nth-child(6) { --i: 6; }
-.name-animation span:nth-child(7) { --i: 7; }
-.name-animation span:nth-child(8) { --i: 8; }
-.name-animation span:nth-child(9) { --i: 9; }
-.name-animation span:nth-child(10) { --i: 10; }
-.name-animation span:nth-child(11) { --i: 11; }
-.name-animation span:nth-child(12) { --i: 12; }
-.name-animation span:nth-child(13) { --i: 13; }
+.content-section .text-col {
+    padding-left: 50px; /* Extra padding on the left for the text column */
+}
 
-.about-descriptions p {
-    animation: slideInRight 1.5s ease-out;
-    font-size: 18px;
+.content-heading {
+    font-size: 32px; /* Font size for heading */
+    color: #c8313a; /* Dark blue color for heading */
+    font-weight: 700; /* Bold font */
+    margin-bottom: 20px; /* Spacing below heading */
+}
+
+.content-description {
+    font-size: 16px; /* Font size for description */
+    color: #5a5a5a; /* Gray color */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 15px; /* Spacing below paragraphs */
+}
+
+.highlighted-text {
+    font-size: 16px;
+    color: #5a5a5a;
     line-height: 1.6;
+    margin-bottom: 15px;
+    position: relative; /* Position relative for pseudo-element */
+    padding-left: 20px; /* Space for the highlight line */
 }
 
-/* Keyframe Animations */
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+.highlighted-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px; /* Width of the highlighted line */
+    height: 100%;
+    background-color: #ff6f61; /* Red highlight color */
 }
 
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+.highlight {
+    font-weight: 700; /* Bold highlight text */
 }
 
-@keyframes fadeInText {
-    0% {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    50% {
-        opacity: 0.5;
-        transform: scale(1.02);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-/* Responsive Styling */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .about-juthi {
-        font-size: 28px;
+    .hero-section {
+        height: 250px; /* Smaller height on mobile */
     }
 
-    .about-descriptions h1 {
-        font-size: 20px;
+    .hero-heading {
+        font-size: 36px; /* Smaller font size for mobile */
     }
 
-    .about-descriptions p {
-        font-size: 16px;
+    .hero-subtext {
+        font-size: 16px; /* Smaller font size on mobile */
     }
 
-    .about-image img {
-        max-width: 250px;
+    .content-section {
+        padding: 40px 0; /* Smaller padding on mobile */
+    }
+
+    .content-section img {
+        margin-bottom: 20px; /* Add space below image on mobile */
+    }
+
+    .content-section .col-lg-6 {
+        padding: 15px; /* Reduce padding on mobile */
+    }
+
+    .content-section .image-col,
+    .content-section .text-col {
+        padding: 0; /* Remove extra padding on mobile */
+    }
+
+    .content-heading {
+        font-size: 24px; /* Smaller heading size on mobile */
+    }
+
+    .content-description {
+        font-size: 14px; /* Smaller font size on mobile */
+    }
+
+    .highlighted-text {
+        font-size: 14px; /* Smaller font size on mobile */
     }
 }
-
-@media (max-width: 576px) {
-    .about-juthi {
-        font-size: 24px;
-    }
-
-    .about-descriptions h1 {
-        font-size: 18px;
-    }
-
-    .about-descriptions p {
-        font-size: 14px;
-    }
-
-    .about-image img {
-        max-width: 200px;
-    }
-
-    .equal-height {
-        display: block; /* On smaller screens, stack the columns */
-    }
-}
-
 
 /*hero*/
 
@@ -366,8 +346,8 @@
   display: grid;
   place-items: center;
   position: relative;
-  height: 100vh;
-  background-color: #d7d7d7;
+  height: 600px;
+  background-color: #f0f1f2;
 
 }
 .student{
@@ -406,7 +386,7 @@
 }
 
 .swiper-slide .ImgHolder {
-  background-color: #4361ee;
+  background-color: #eecf43;
   display: flex;
   width: 100%;
   height: auto;
@@ -416,7 +396,7 @@
 }
 
 .ContentHolder::before {
-  background-color: #4361ee;
+  background-color: #eecf43;
   content: '';
   width: 50px;
   height: 50px;
@@ -1057,16 +1037,16 @@ body {
   place-items: center;
   position: relative;
   height: 100vh;
-  background-color: #9a99f2;
+  background-color: #f8f9fa;
 
 }
 .student{
     text-transform:capitalize;
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     text-align: center;
-    color: #000000;
+    color: #6a3438;
 }
 .swiper-container {
   border-radius: 5px;
@@ -1096,7 +1076,7 @@ body {
 }
 
 .swiper-slide .ImgHolder {
-  background-color: #4361ee;
+  background-color: #b1b493;
   display: flex;
   width: 100%;
   height: auto;
@@ -1106,7 +1086,7 @@ body {
 }
 
 .ContentHolder::before {
-  background-color: #4361ee;
+  background-color: #b1b493;
   content: '';
   width: 50px;
   height: 50px;
@@ -1126,12 +1106,12 @@ body {
 .swiper-pagination-bullet {
   background-color: white;
   opacity: 1;
-  border: 1px solid #4361ee;
+  border: 1px solid #b1b493;
   
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #4361ee;
+  background-color: #6a3438;
 }
 
 .swiper-button {
@@ -1144,7 +1124,7 @@ body {
   border-radius: 50%;
   margin: auto;
   object-fit: cover;
-  border: 3px solid #4361ee;
+  border: 3px solid #6a3438;
   outline: 2px solid white;
 }
 
@@ -1190,31 +1170,37 @@ body {
 
 /*testimonial*/
 
+
+
+/* Newsletter Section */
 /*newsletter*/
 
 .newsletter-section {
-    padding: 60px 15px;
-    background-color: #f9f8fa;
+    padding: 0 15px;
+    background-color: #b1b493;
     
 }
 
 .newsletter-heading {
     font-weight: bold;
     margin-bottom: 20px;
-    font-size: 28px; /* Matches the size in the image */
+    font-size: 30px; /* Matches the size in the image */
+    margin-top: 30px;
+    color: #b1b493;
 }
 
 .newsletter-description {
     max-width: 650px;
     margin: 0 auto 30px;
     font-size: 16px;
-    color: #6c757d;
+    color: #0f0f0f;
     line-height: 1.5;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 20px;
+    
 }
 
 .newsletter-description::before,
@@ -1223,7 +1209,7 @@ body {
     position: absolute;
     width: 1px;
     height: 40px; /* Adjust the height as needed */
-    background-color: #6c757d;
+    background-color: #b1b493;
 }
 
 .newsletter-description::before {
@@ -1237,7 +1223,7 @@ body {
 }
 
 .past-issues-link {
-    color: #007bff;
+    color: #b1b493;
     text-decoration: none;
 }
 
@@ -1257,7 +1243,7 @@ body {
     max-width: 200px;
     margin-top: 10px; /* Adjust spacing between inputs and button */
     height: 50px; /* Height matching the inputs */
-    background-color: #007bff; /* Matching color */
+    background-color: #b1b493; /* Matching color */
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1265,7 +1251,7 @@ body {
 }
 .btn-subscribe:hover{
     background-color: #ffffff;
-    color: #000;
+    color: rgb(39, 37, 37)493;
 }
 
 /* Toast Styles */
@@ -1309,6 +1295,8 @@ body {
 
 
 /*newsletter*/
+
+
 
 /*footer*/
 

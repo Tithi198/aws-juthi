@@ -843,20 +843,26 @@
 
 /*footer*/
 
+/*footer*/
+
 footer {
     background-color: #1E201E; 
+    
     color: #fff; 
+    
     text-align: center;
     padding: 20px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .footer-content {
     display: flex;
     justify-content: center; 
+    
     align-items: center;
     flex-direction: column; 
+    
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -883,6 +889,7 @@ footer p {
     width: 50px;
     height: 50px;
     background-color: #ffffff; 
+    
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -892,6 +899,7 @@ footer p {
 
 .circlee:hover {
     background-color: #fd0059; 
+    
 }
 
 .circlee i {
@@ -903,10 +911,13 @@ footer p {
 }
 
 
+
 @media (min-width: 768px) {
     .footer-content {
-        flex-direction: row; 
+        flex-direction: row;
+        
         justify-content: space-between; 
+        
     }
 
     .circlee {

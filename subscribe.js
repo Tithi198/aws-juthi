@@ -47,7 +47,6 @@ toggleBtn.addEventListener("click", () => {
   premiumPrice.innerHTML = newPremium;
 });
 
-
 //footer//
 
 function scrollToTop() {
@@ -56,3 +55,4 @@ function scrollToTop() {
         behavior: "smooth"
     });
 }
+

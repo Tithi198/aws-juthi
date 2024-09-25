@@ -46,6 +46,7 @@ form.addEventListener('submit', function(event) {
     toastMessage.show();
 });
 
+
 //footer//
 
 function scrollToTop() {

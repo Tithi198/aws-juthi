@@ -1,3 +1,24 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Full height */
+    font-family: Arial, sans-serif;
+}
+
+/* Wrapper */
+.wrapper {
+    min-height: 100%; /* Ensures the wrapper takes the full height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1; /* Allows this section to grow and take available space */
+    padding-bottom: 20px; /* Optional padding for space between content and footer */
+}
+
 /* Header Styles */
 .header {
     position: sticky;
@@ -178,12 +199,10 @@
     }
 }
 
-
-
 /* Contact Form Styles */
-
 h1 {
     font-weight: 700;
+    color: #dc3148;
 }
 
 .contact-form {
@@ -192,7 +211,7 @@ h1 {
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     max-width: 100%;
-    margin: 0 auto; /* Center the form on larger screens */
+    margin-bottom: 50px;
 }
 
 .contact-form input,
@@ -217,7 +236,7 @@ h1 {
 }
 
 .contact-form .btn-send {
-    background-color: #3C3D37;
+    background-color: #dc3148;
     color: #fff;
     border: none;
     padding: 10px;
@@ -227,7 +246,7 @@ h1 {
 }
 
 .contact-form .btn-send:hover {
-    background-color: #f9a02c;
+    background-color: #f96d2c;
     transform: scale(1.1); /* Zoom on hover */
 }
 
@@ -373,19 +392,21 @@ h1 {
 
 /* Footer Styles */
 footer {
-    background-color: #1E201E;
-    color: #fff;
+    background-color: #1E201E; 
+    color: #fff; 
     text-align: center;
     padding: 20px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .footer-content {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; 
+    
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -411,7 +432,8 @@ footer p {
 .circlee {
     width: 50px;
     height: 50px;
-    background-color: #ffffff;
+    background-color: #ffffff; 
+    
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -420,22 +442,26 @@ footer p {
 }
 
 .circlee:hover {
-    background-color: #fd0059;
+    background-color: #fd0059; 
+    
 }
 
 .circlee i {
     font-size: 20px;
     color: #000;
 }
-
-.circlee i:hover {
+.circlee i:hover{
     color: #fff;
 }
+
+
 
 @media (min-width: 768px) {
     .footer-content {
         flex-direction: row;
-        justify-content: space-between;
+        
+        justify-content: space-between; 
+        
     }
 
     .circlee {
@@ -443,7 +469,7 @@ footer p {
         height: 40px;
     }
 
-    .circle i {
+    .circle i  {
         font-size: 18px;
     }
 
@@ -451,3 +477,6 @@ footer p {
         font-size: 16px;
     }
 }
+
+
+/*footer*/

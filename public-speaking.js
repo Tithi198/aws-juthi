@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
 //footer//
 
 function scrollToTop() {
@@ -42,3 +41,5 @@ function scrollToTop() {
         behavior: "smooth"
     });
 }
+
+
