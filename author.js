@@ -34,13 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-//tetimonial//
-
-
-
-
 //newsletter toast//
 
 
