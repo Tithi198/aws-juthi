@@ -186,50 +186,36 @@
 
 /*  hero section */
 
-/* styles.css */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* AWS Premier Partner Section */
-.partner-section {
-    background-image: url('img/background.jpg'); /* Replace with the actual background image URL */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 250px; /* Adjust the height as needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.overlay {
-    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay to make text stand out */
+.hero-section {
     width: 100%;
-    height: 100%;
+    height: 350px;
+    background-image: url('img/dark-galaxy-patterned.jpg');
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    animation: gradientBackground 5s ease infinite; 
 }
 
-.partner-heading {
-    color: rgba(255, 255, 255, 0.767);
-    font-size: 3.5rem;
-    text-transform: sentencecase;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
+
+.hero-heading {
+    font-size: 48px; /* Large font size for heading */
+    color: #ffffff; /* White color for text */
+    font-weight: 700; /* Bold font */
+    animation: zoomInOut 5s ease-in-out infinite; /* Zoom animation */
+}
+
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.2); /* Zoomed-in size */
+    }
 }
 
 /* Hero Section */
-/* General Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
 /* Partner Section */
 .partner-section {
