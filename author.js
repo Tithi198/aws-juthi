@@ -31,12 +31,19 @@ document.addEventListener("DOMContentLoaded", function() {
             searchBtn.classList.remove('d-none');
         }
     });
+
+    // Redirect to courses page when user presses Enter in the search input
+    searchInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Prevent the default form submission
+            window.location.href = 'courses.html'; // Redirect to the courses page
+        }
+    });
 });
 
 
+
 //newsletter toast//
-
-
 
 const form = document.getElementById('contactForm');
 const toastMessage = new bootstrap.Toast(document.getElementById('toastMessage'));
