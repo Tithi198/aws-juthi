@@ -55,33 +55,18 @@ function navigateToCourse(courseId) {
   
 document.addEventListener('DOMContentLoaded', redirectToCourse);
 
-//feeback//
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const yesBtn = document.getElementById('yes-btn');
-    const noBtn = document.getElementById('no-btn');
-    const toastMessage = document.getElementById('feedback-toast');
-    const closeToastBtn = document.getElementById('close-toast-btn');
+//newsletter toast//
 
-    function showToast() {
-        toastMessage.style.display = 'flex'; // Show toast with flex layout
-        setTimeout(() => {
-            toastMessage.style.opacity = 1; // Fade in effect
-        }, 100);
-    }
+const form = document.getElementById('contactForm');
+const toastMessage = new bootstrap.Toast(document.getElementById('toastMessage'));
 
-    function hideToast() {
-        toastMessage.style.opacity = 0; // Fade out effect
-        setTimeout(() => {
-            toastMessage.style.display = 'none'; // Hide after fade out
-        }, 300);
-    }
-
-    yesBtn.addEventListener('click', showToast);
-    noBtn.addEventListener('click', showToast);
-    closeToastBtn.addEventListener('click', hideToast);
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    toastMessage.show();
 });
+
 
 //footer//
 
