@@ -77,6 +77,7 @@
 
 <!-- Coding Section -->
  
+<!-- Coding Section -->
 <section class="coding-section">
     <div class="container">
         <div class="row justify-content-center">
@@ -85,21 +86,16 @@
                 <p class="lead mb-5">
                     Whether you want to excel in web development, mobile development, or strengthen your fundamental software engineering skills, there is a course for you.
                 </p>
-                <div class="row g-3">
-                    <div class="col-md-8">
-                        <input type="text" class="form-control form-control-lg" placeholder="Search" oninput="searchCourses(this.value)">
-                    </div>
-                    <div class="col-md-4">
-                        <select class="form-select form-select-lg" onchange="navigateToCourse(this.value)">
-                            <option selected disabled>Select a Course</option>
-                            <option value="all-access-subscription">All-Access Subscription</option>
-                            <option value="python-projects">Python Projects for Beginners</option>
-                            <option value="python-mastery">Complete Python Mastery</option>
-                            <option value="sql-mastery">Complete SQL Mastery</option>
-                            <option value="react-beginners">React 18 for Beginners</option>
-                            <option value="nextjs-series">The Ultimate Next.js Series</option>
-                        </select>
-                    </div>
+                <div class="dropdown-container"> <!-- Added container for centering -->
+                    <select class="form-select form-select-lg" onchange="navigateToCourse(this.value)">
+                        <option selected disabled>Select a Course</option>
+                        <option value="all-access-subscription">All-Access Subscription</option>
+                        <option value="python-projects">Python Projects for Beginners</option>
+                        <option value="python-mastery">Complete Python Mastery</option>
+                        <option value="sql-mastery">Complete SQL Mastery</option>
+                        <option value="react-beginners">React 18 for Beginners</option>
+                        <option value="nextjs-series">The Ultimate Next.js Series</option>
+                    </select>
                 </div>
             </div>
         </div>

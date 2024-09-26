@@ -347,6 +347,7 @@
 }
 
 /* Responsive Design */
+
 @media (max-width: 768px) {
     .course-section {
         text-align: center; /* Center-align text on smaller screens */
@@ -376,58 +377,47 @@
 
 /* Coding Section */
 
+/* Coding Section */
+
 .coding-section {
     background-color: #f8f9fa; /* Light background color */
-    padding: 60px 15px; /* Reduced horizontal padding for small screens */
+    padding: 60px 15px; /* Padding for the coding section */
 }
 
 .coding-section h2 {
-    font-size: 32px; /* Larger font size for heading */
+    font-size: 32px; /* Font size for the heading */
     font-weight: 700; /* Bold font */
     color: #333333; /* Dark text color */
     margin-bottom: 20px; /* Space below heading */
-    text-align: center; /* Center text on smaller screens */
+    text-align: center; /* Center text */
 }
 
 .coding-section p.lead {
-    font-size: 18px; /* Slightly larger font size for lead text */
+    font-size: 18px; /* Font size for lead text */
     color: #555555; /* Medium grey color */
     margin-bottom: 30px; /* Space below paragraph */
     line-height: 1.6; /* Line height for better readability */
-    text-align: center; /* Center text on smaller screens */
+    text-align: center; /* Center text */
 }
 
-.coding-section .form-control-lg {
-    padding: 10px 15px; /* Larger padding inside input */
-    font-size: 16px; /* Font size for input text */
-    border-radius: 5px; /* Rounded corners */
-    border: 1px solid #ddd; /* Light border */
-    box-shadow: none; /* Remove default shadow */
-    width: 100%; /* Full width for inputs */
-}
-
-.coding-section .form-control-lg:focus {
-    border-color: #007bff; /* Blue border on focus */
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Light blue shadow */
+.coding-section .dropdown-container {
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center the dropdown horizontally */
+    margin-top: 20px; /* Space above dropdown */
 }
 
 .coding-section .form-select-lg {
-    padding: 10px 15px; /* Larger padding inside select */
+    padding: 10px 15px; /* Padding inside the select */
     font-size: 16px; /* Font size for select text */
     border-radius: 5px; /* Rounded corners */
     border: 1px solid #ddd; /* Light border */
     box-shadow: none; /* Remove default shadow */
-    width: 100%; /* Full width for selects */
-    
+    width: 100%; /* Full width for the select */
 }
 
 .coding-section .form-select-lg:focus {
     border-color: #007bff; /* Blue border on focus */
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Light blue shadow */
-}
-
-.coding-section .row.g-3 > .col-md-8 {
-    margin-bottom: 15px; /* Space between input and select on mobile */
 }
 
 /* Media Queries for Responsive Design */
@@ -437,17 +427,13 @@
     }
 
     .coding-section h2 {
-        font-size: 28px; /* Slightly smaller font size */
+        font-size: 28px; /* Smaller font size */
         margin-bottom: 15px; /* Adjust margin for better spacing */
     }
 
     .coding-section p.lead {
-        font-size: 16px; /* Smaller font size for readability */
+        font-size: 16px; /* Smaller font size */
         margin-bottom: 20px; /* Adjust margin for better spacing */
-    }
-
-    .coding-section .row.g-3 > .col-md-8 {
-        margin-bottom: 10px; /* Reduce spacing for inputs on smaller screens */
     }
 }
 
@@ -466,17 +452,11 @@
         margin-bottom: 15px; /* Reduce margin for better spacing */
     }
 
-    .coding-section .form-control-lg,
     .coding-section .form-select-lg {
-        padding: 8px 10px; /* Smaller padding for inputs */
+        padding: 8px 10px; /* Smaller padding for select */
         font-size: 14px; /* Smaller font size */
     }
-
-    .coding-section .row.g-3 > .col-md-8 {
-        margin-bottom: 8px; /* Reduce spacing for inputs */
-    }
 }
-
 
 /* Project Cards Section */
 
